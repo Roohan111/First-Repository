@@ -1,3 +1,15 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Rohan Karki</h1>
+</body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +20,74 @@
 </head>
 <body>
     <h1> Rohan Karki</h1>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #output-box {
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 20px;
+            width: 200px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is for the addition, subtraction, multiplication and division.</h1>
+    <p>Let's try it....</p>
+    <input id="a" type="text"><br><br>
+    <input id="b" type="text"><br><br>
+    
+    <button type="button" onclick="Multiply()">Multiply</button><br><br>
+    <button type="button" onclick="Divide()">Divide</button><br><br>
+    <button type="button" onclick="Add()">Add</button><br><br>
+    <button type="button" onclick="Sub()">Subtract</button><br><br><br><br>
+
+    <div id="output-box"> 
+        <label>Result:</label>
+        <output id="c"></output>
+    </div>
+
+    <script>
+        function Multiply()
+        {
+            var x = parseInt(document.getElementById("a").value);
+            var y = parseInt(document.getElementById("b").value);
+            var mul = x * y;
+            document.getElementById("c").value = mul;
+        }
+
+        function Divide()
+        {
+            var x = parseInt(document.getElementById("a").value);
+            var y = parseInt(document.getElementById("b").value);
+            var div = x/y;
+            document.getElementById("c").value = div;
+        
+        }
+        function Add()
+        {
+            var x = parseInt(document.getElementById("a").value);
+            var y = parseInt(document.getElementById("b").value);
+            var mul = x + y;
+            document.getElementById("c").value = mul;
+        }
+        function Sub()
+        {
+            var x = parseInt(document.getElementById("a").value);
+            var y = parseInt(document.getElementById("b").value);
+            var mul = x - y;
+            document.getElementById("c").value = mul;
+        }
+    </script>
 </body>
 </html>
